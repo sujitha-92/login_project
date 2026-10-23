@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Figma-inspired Flask Login Page
+# Flask Login Page
 
 ## Included
 - Login page (`/`)
