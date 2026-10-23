@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Create an account | Canvas Studio</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="simple-page">
+<main class="simple-card">
+  <a class="back-link" href="{{ url_for('login') }}">← Back to sign in</a>
+  <p class="eyebrow">GET STARTED</p><h1>Create an account</h1><p class="form-intro">Create your account to keep your work moving.</p>
+  {% with messages = get_flashed_messages() %}{% for message in messages %}<div class="notice">{{ message }}</div>{% endfor %}{% endwith %}
+  <form method="post">
+    <label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+    <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+    <label for="password">Password</label><input id="password" name="password" type="password" placeholder="Create a password" minlength="8" autocomplete="new-password" required>
+    <button class="primary-button" type="submit">Create account <span>→</span></button>
+  </form>
+  <p class="bottom-note">Already have an account? <a href="{{ url_for('login') }}">Sign in</a></p>
+</main></body></html>
