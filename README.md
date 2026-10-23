@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Figma-inspired Flask Login Page
 
 ## Included
@@ -21,3 +22,6 @@ If PowerShell blocks activation, use `python -m pip install flask` and `python a
 
 ## Important
 This is a visual/demo project. It does not store users in a database, verify passwords, or send real password reset emails. Production use requires secure authentication, password hashing, CSRF protection, validation, and a real email reset flow. Store a strong Flask secret key outside source code.
+=======
+# login_project
+>>>>>>> 66eb597fc845e34a01f1f1300d0894fc7a199891
